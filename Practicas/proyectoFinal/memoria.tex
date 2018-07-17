@@ -1,0 +1,91 @@
+\documentclass[a4paper,openright,12pt]{article}
+\usepackage[spanish]{babel} % espanol
+\usepackage[utf8]{inputenc} % acentos sin codigo
+\usepackage{graphicx} % graficos
+\usepackage{hyperref}
+\usepackage[usenames]{color}
+\usepackage{endnotes}
+
+\title{Proyecto Final - Aprendizaje Automático}
+\author{Santiago Vidal Martínez, David Gil Bautista}
+
+\begin{document}
+
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=10cm]{logo.png}
+\end{center}
+\end{figure}
+
+ESCUELA TÉCNICA SUPERIOR DE INGENIERÍAS INFORMÁTICA Y DE TELECOMUNICACIÓN DE LA UGR\\
+\vspace*{0.15in}
+DEPARTAMENTO DE DECSAI \\
+\vspace*{0.6in}
+
+\begin{large}
+PROYECTO FINAL DE APRENDIZAJE AUTOMÁTICO:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{HUMAN ACTIVITY RECOGNITION USING SMARTPHONE} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+Este proyecto ha sido realizado por David Gil Bautista y Santiago Vidal Martínez\\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\end{center}
+
+\end{titlepage}
+\tableofcontents
+\clearpage
+
+\section{Análisis del problema}
+Para el proyecto hemos decidido afrontar el problema de Reconocimiento de la Actividad Humana por el uso de teléfonos inteligentes (\textbf{Human Activity Recognition Using Smartphones})\\\\
+Dicho dataset cuenta con los datos obtenidos por el acelerómetro y giroscopio que son los sensores de un smartphone (Samsung Galaxy II) mientras que distintas personas llevan el dispositivo en la cintura. Los datos recogidos han sido aportados por un grupo de 30 personas con edades comprendidas entre los 19 y 48 años, y cada persona ejecuta 6 posibles acciones: (caminar, subir escaleras, bajar escaleras, sentarse, levantarse, tumbarse)\footnote{Aquí ponemos un ejemplo de una persona realizando las 6 acciones: \url{https://www.youtube.com/watch?v=XOEN9W05_4A}.} \\\\ 
+Hemos visto que hay varios articulos en los que se estudia el problema, y más concretamente, uno de Davide Anguita\footnote{ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012}, en el que usa SVM (\textbf{Support Vector Machine}) para clasificar los datos.
+\section{Codificación previa de los datos}
+Se nos ofrece un set de datos de 10299 ejemplos con 561 atributos.\\\\
+Para cada instancia se ofrece la aceleración del acelerómetro, la velocidad angular del giroscopio, un vector con 561 características que es producto de operaciones con los datos con los sensores medidos en periodos temporales de 2.56 segundos a 50 Hz, un identificador de la persona que está realizando la acción y la acción en sí.
+\\\\
+Para todo esto nos encontramos con un conjunto de datos que ya ha sido preprocesado para reducir el ruido. 
+\newpage
+
+\section{Selección de clases de funciones a usar}
+Los modelos que ajustaremos serán:
+\begin{itemize}
+\item Regresión Logística con y sin regularización
+\item SVM (Support Vector Machine)
+\item Redes Neuronales
+\item Boosting
+\item Random Forest
+\end{itemize}
+
+\section{Normalización de las variables}
+La base de datos se encuentra normalizada con valores en el rango [-1,1].
+
+\section{Definición de los conjuntos de \textit{training}, \textit{test} y validación}
+Encontramos que el conjunto viene dividido en dos conjuntos, en los que el \textit{training} posee el 70\% de los datos y el \textit{test} el 30\%.\\\\
+Para la validación usaremos tanto \textit{bagging} como validación cruzada, y en esta última usaremos un conjunto de validación del 20\%.
+
+\section{Discusión de la técnica escogida tras la validación}
+
+\section{Aplicación de la técnica escogida al conjunto de test}
+
+\section{Discusión de la idoneidad de la métrica usada en el ajuste}
+
+\section{Valoración del modelo encontrado}
+
+
+
+
+
+
+\end{document}

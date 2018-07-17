@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}An\IeC {\'a}lisis del problema}{2}{section.1}
+\contentsline {section}{\numberline {2}Codificaci\IeC {\'o}n previa de los datos}{2}{section.2}
+\contentsline {section}{\numberline {3}Selecci\IeC {\'o}n de clases de funciones a usar}{3}{section.3}
+\contentsline {section}{\numberline {4}Normalizaci\IeC {\'o}n de las variables}{3}{section.4}
+\contentsline {section}{\numberline {5}Definici\IeC {\'o}n de los conjuntos de \textit {training}, \textit {test} y validaci\IeC {\'o}n}{3}{section.5}
+\contentsline {section}{\numberline {6}Discusi\IeC {\'o}n de la t\IeC {\'e}cnica escogida tras la validaci\IeC {\'o}n}{3}{section.6}
+\contentsline {section}{\numberline {7}Aplicaci\IeC {\'o}n de la t\IeC {\'e}cnica escogida al conjunto de test}{3}{section.7}
+\contentsline {section}{\numberline {8}Discusi\IeC {\'o}n de la idoneidad de la m\IeC {\'e}trica usada en el ajuste}{3}{section.8}
+\contentsline {section}{\numberline {9}Valoraci\IeC {\'o}n del modelo encontrado}{3}{section.9}
