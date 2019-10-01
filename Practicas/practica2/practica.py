@@ -655,6 +655,7 @@ def minibatch_step(w, X_train, y_train, n):
 
 # Función sigmoide para clasificar
 def sigmoide(x):
+    print('sigma: ',1/1+(np.exp(-x)))
     return 1/1+(np.exp(-x))
 
 def gradient(w, X, y):
@@ -667,6 +668,8 @@ def error_logistica(w, X, y):
     error = 0
     
     etiqueta = sigmoide(X.dot(w))
+    
+    print('etiqueta: ', etiqueta)
     
     etiqueta[(etiqueta > 0.5)] = 1    
     etiqueta[(etiqueta < 0.5)] = -1
